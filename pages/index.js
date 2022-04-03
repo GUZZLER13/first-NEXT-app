@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
+import Link from "next/Link"
 
 export default function Home() {
   return (
@@ -16,9 +17,9 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Guzzler13</a>
         </h1>
         <nav className={styles.nav}>
-          <a className={styles.a} href="/contact">
+          <Link className={styles.a} href="/contact">
             Contact
-          </a>
+          </Link>
         </nav>
       </main>
     </div>
